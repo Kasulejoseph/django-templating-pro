@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html>
+
+<head>
+<!-- Bootstrap core CSS -->
+<link href = "{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+ <link href = "{% static 'css/starter-template.css'%}" rel="stylesheet">
+</head>
+</html>
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<div class = 'row'>
+<div class = 'col-sm-6 col-sm-offset-3'>
+<h1>{{ title }}</h1>
+<p>{{ confirm_message }}</p>
+<!-- hide form content if submit is done -->
+{% if form %}
+<form name = 'form' method = 'POST' action = ''> {% csrf_token %}
+{{ form|crispy }}
+<input type='submit' value='submit form' class ='btn btn-default' />
+</form>
+{% endif%}
+</div>
+</div>
+{% endblock %}
+

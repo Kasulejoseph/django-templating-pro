@@ -1,0 +1,374 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link type="text/css" href="echosite.css" rel="stylesheet"/>
+<link rel = 'stylesheet' href = "{% static 'css/main.css'%}">
+<title>HOME PAGE</title>
+<style type="text/css">
+<!--
+
+#Layer1 {
+	position:absolute;
+	width:1356px;
+	height:106px;
+	z-index:1;
+	top: 22px;
+	left: 1px;
+	background-color:#CCCC00;
+}
+#Layer2 {
+	position:absolute;
+	width:1122px;
+	height:111px;
+	z-index:2;
+	left: 3px;
+	top: 3px; color:#99FF33;
+}
+.style1 {color:}
+.style2 {
+	color: #000066;
+	font-weight: bold;
+}
+#Layer3 {
+	position:absolute;
+	width:1357px;
+	height:94px;
+	z-index:2;
+	left: -1px;
+	top: 105px;
+	background-color:#99FF66;
+}
+#Layer4 {
+	position:absolute;
+	width:116px;
+	height:45px;
+	z-index:1;
+	left: 305px;
+	top: 16px;
+	background-color:#CCCC00;
+}
+#Layer5 {
+	position:absolute;
+	width:123px;
+	height:45px;
+	z-index:2;
+	left: 422px;
+	top: 16px;
+	background-color:#CCCC00;
+}
+#Layer6 {
+	position:absolute;
+	width:115px;
+	height:44px;
+	z-index:1;
+	left: 124px;
+	top: 1px;
+	background-color:#CCCC00;
+}
+#Layer7 {
+	position:absolute;
+	width:124px;
+	height:44px;
+	z-index:1;
+	left: 117px;
+	top: 0px;
+	background-color:#CCCC00;
+}
+#Layer8 {
+	position:absolute;
+	width:130px;
+	height:44px;
+	z-index:1;
+	left: 125px;
+	top: 0px;
+	background-color:#CCCC00;
+}
+#Layer9 {
+	position:absolute;
+	width:128px;
+	height:44px;
+	z-index:2;
+	left: 925px;
+	top: 144px;
+	background-color:#CCCC00;
+}
+.style3 {color: #FF0000}
+#Layer10 {
+	position:absolute;
+	width:589px;
+	height:36px;
+	z-index:3;
+	left: 686px;
+	top: 471px;
+}
+#Layer11 {
+	position:absolute;
+	width:1260px;
+	height:1432px;
+	z-index:4;
+	left: 57px;
+	top: 223px;
+}
+#Layer12 {
+	position:absolute;
+	width:609px;
+	height:312px;
+	z-index:5;
+	left: 62px;
+	top: 224px;
+}
+#Layer13 {
+	position:absolute;
+	width:481px;
+	height:32px;
+	z-index:6;
+	left: 110px;
+	top: 601px;
+}
+.style4 {color: #E60000}
+#Layer14 {
+	position:absolute;
+	width:627px;
+	height:360px;
+	z-index:7;
+	left: 688px;
+	top: 221px;
+}
+#Layer15 {
+	position:absolute;
+	width:605px;
+	height:278px;
+	z-index:1;
+	left: 9px;
+	top: 449px;
+}
+#Layer16 {
+	position:absolute;
+	width:308px;
+	height:38px;
+	z-index:1;
+	left: 8px;
+	top: 327px;
+}
+#Layer17 {
+	position:absolute;
+	width:632px;
+	height:303px;
+	z-index:2;
+	left: 614px;
+	top: 449px;
+}
+#Layer18 {
+	position:absolute;
+	width:591px;
+	height:35px;
+	z-index:1;
+	left: -606px;
+	top: 226px;
+}
+.style7 {color: #F00000}
+#Layer19 {
+	position:absolute;
+	width:597px;
+	height:403px;
+	z-index:3;
+	left: 22px;
+	top: 852px;
+}
+#Layer20 {
+	position:absolute;
+	width:474px;
+	height:287px;
+	z-index:1;
+	left: 619px;
+	top: -2px;
+}
+#Layer21 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:4;
+}
+#Layer22 {
+	position:absolute;
+	width:543px;
+	height:42px;
+	z-index:1;
+	left: 29px;
+	top: 866px;
+}
+#Layer23 {
+	position:absolute;
+	width:508px;
+	height:42px;
+	z-index:1;
+	left: 647px;
+	top: -325px;
+}
+#Layer24 {
+	position:absolute;
+	width:261px;
+	height:48px;
+	z-index:1;
+	left: 84px;
+	top: 250px;
+}
+#Layer25 {
+	position:absolute;
+	width:477px;
+	height:45px;
+	z-index:4;
+	left: 729px;
+	top: 666px;
+}
+#Layer26 {
+	position:absolute;
+	width:266px;
+	height:45px;
+	z-index:5;
+	left: 64px;
+	top: 1137px;
+}
+.style9 {color: #E80000}
+#Layer27 {
+	position:absolute;
+	width:1187px;
+	height:176px;
+	z-index:6;
+	left: 16px;
+	top: 1249px;
+	background-color:#666699;
+}
+#Layer28 {
+	position:absolute;
+	width:361px;
+	height:55px;
+	z-index:1;
+}
+#Layer29 {
+	position:absolute;
+	width:286px;
+	height:167px;
+	z-index:2;
+	left: 365px;
+	top: 4px;
+	background-color:#FFFFCC;
+}
+#Layer30 {
+	position:absolute;
+	width:251px;
+	height:162px;
+	z-index:3;
+	left: 662px;
+	top: 4px;
+	background-color:#FFFFCC;
+}
+#Layer31 {
+	position:absolute;
+	width:227px;
+	height:159px;
+	z-index:4;
+	left: 927px;
+	top: 6px;
+	background-color:#FFFFCC;
+}
+#Layer32 {
+	position:absolute;
+	width:234px;
+	height:40px;
+	z-index:5;
+	left: 672px;
+	top: 115px;
+}
+#Layer33 {
+	position:absolute;
+	width:235px;
+	height:39px;
+	z-index:6;
+	left: 937px;
+	top: 111px;
+}
+.style10 {color: #EA0000; }
+-->
+</style>
+
+</head>
+
+<body style="background-color:#FFFFCC";>
+<div id="Layer11">
+  <div id="Layer15"><img src="vulnerable.jpg" alt="vulnerable children" width="600" height="400"/ class="circular"></div>
+  <div id="Layer17">
+    <div id="Layer18">
+      <h2 align="center" class="style7">VC- Vulnerable children whose parents can not provide basics needs for life </h2>
+    </div>
+    <img src="orphan.jpg" alt="orphan childrens" width="622" height="399" class="circular"/></div>
+  <div id="Layer19">
+    <div id="Layer20">
+      <img src="education.jpg" alt="education" width="600" height="400" class="circular"/>
+      <div id="Layer24">
+        <h1 class="style4">Child Education </h1>
+      </div>
+    </div>
+    <img src="health.jpg" alt="health care" width="596" height="400" class="circular"/></div>
+ 
+ 
+  <div id="Layer25">
+    <h2 align="center" class="style9">Orphans- Children with no parents but have a guardian </h2>
+  </div>
+  <div id="Layer26">
+    <h1 align="center" class="style10">Child Care </h1>
+  </div>
+  <div id="Layer27">
+    <div id="Layer28" style="background-color: #336666">
+      <h2>Related info </h2>
+    </div>
+    <div id="Layer29"> 
+      <h3>COMPANY'S IDENTITY </h3>
+      <p>ECHO-A Is a fully Registered National Company.Registration Number 80020000063899;Certificate Number BRS-INCC-8-17/39068(under section 18/(3) of the company's act. </p>
+    </div>
+    <div id="Layer30"><img src="dev.jpg" width="250" height="100"/></div>
+    <div id="Layer31"><img src="dev2.jpg" width="250" height="100"/></div>
+    <div id="Layer32">
+      <h3>Child Development </h3>
+    </div>
+    <div id="Layer33">
+      <h3>Good child upbringing </h3>
+    </div>
+  </div>
+</div>
+<div id="Layer14">
+  <img src="care.jpg" alt="care width=" width="600"" height="450" class="circular"/>
+  <div id="Layer16">
+    <h1 class="style9">Parental child care </h1>
+  </div>
+</div>
+<div id="Layer12"><img src="youth.jpg" alt="youth" width="600" height="450" class="circular"/></div>
+<div id="Layer13">
+  <h2 align="center" class="style4">Y- Youths Aged between 18 to 35 years </h2>
+</div>
+<div class="style1" id="Layer1"> 
+  <div align="center">
+    <h2 class="style2"><p><p class="style3">ESSENTIAL CARE &amp; HOPE FOR ORPHANS AND VULNERABLE CHILDREN OF AFRICA <br>
+    (ECHO-A)</h2>
+    <div id="Layer3">
+	<div id="menu">
+	<ul>
+	<li><a href="{% url 'home' %}">HOME</a></li>
+	<li><a href="service.html">SERVICES</a></li>
+	<li><a href="project.html">PROJECTS</a></li>
+	<li><a href="{% url 'signup' %}">ABOUT US</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+	<li><a href="{% url 'login' %}">login</a></li>
+	</ul>
+	</div>
+	</div>
+  </div>
+</div>
+</body>
+</html>
+
+
