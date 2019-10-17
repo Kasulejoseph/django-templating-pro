@@ -24,9 +24,10 @@ from contact import views as contact_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', profiles_views.home, name='home'),
-    path('account/signup/', profiles_views.signup, name='signup'),
-    path('account/login/', profiles_views.login, name='login'),
+    path('signup/', profiles_views.signup, name='signup'),
+    path('login/', profiles_views.login, name='login'),
     path('contact/', contact_views.contact, name='contact'),
+    path('about/', profiles_views.about, name='about'),
     path('accounts/', include('allauth.urls')),
 ]
 
