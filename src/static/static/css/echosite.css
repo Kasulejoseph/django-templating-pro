@@ -1,0 +1,25 @@
+
+body{
+    padding-top: 0px !important;
+    width: 100%;
+}
+.style2 {
+	color: #000066;
+	font-weight: bold;
+}
+
+.style3 {color: #FF0000}
+.style7 {color: #F00000}
+.style9 {color: #E80000}
+.related-info {
+	position:absolute;
+	width:1187px;
+	height:176px;
+	z-index:6;
+	top: 1530px;
+	background-color:#666699;
+}
+.style10 {color: #EA0000; }
+.carosuel-image{
+    margin-top: -30px;
+}
