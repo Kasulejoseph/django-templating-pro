@@ -1,3 +1,4 @@
+{% extends 'auth-base.html' %}
 {% load staticfiles %}
 <link href = "{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
  <link href = "{% static 'css/starter-template.css'%}" rel="stylesheet">
@@ -19,7 +20,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <button type="submit" class = 'btn btn-default'>{% trans "Sign Up" %} &raquo;</button>
+  <button type="submit" class = 'btn btn-success'>{% trans "Sign Up" %} &raquo;</button>
 </form>
 
 {% endblock %}

@@ -8,10 +8,15 @@ def home(request):
 
 def signup(request):
 	context = {}
-	template = '/account/signup.html'
+	template = 'account/signup.html'
 	return render(request,template,context)	
 
 def login(request):
 	context = {}
-	template = '/account/login.html'
+	template = 'account/login.html'
+	return render(request,template,context)	
+
+def about(request):
+	context = {}
+	template = 'about.html'
 	return render(request,template,context)	

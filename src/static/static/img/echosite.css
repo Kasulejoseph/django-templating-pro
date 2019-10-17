@@ -1,0 +1,51 @@
+/* CSS Document */
+
+#menu ul {
+list-style:none;
+}
+#menu ul a {
+text-decoration:none;
+color:blue;
+display:block;
+}
+#menu ul li {
+background-color:#CCCC00;
+width:130px;
+height:45px;
+float:left;
+border:1px solid white;
+text-align:center;
+line-height:45px;
+border-radius:35px;
+position:relative;
+}
+#menu ul a:hover {
+background-color:#00FF00;
+border-radius:35px;
+}
+#menu ul ul {
+position:absolute;
+display:none;
+margin:0px;
+padding:0px;
+}
+#menu ul li:hover > ul {
+display:block;
+}
+
+.circular {
+border-radius:50%;
+}
+.circular-youth img {
+margin-left:-50%;
+}
+.follow ul{
+list-style:none;
+}
+.follow ul li{
+margin:3px;
+float:left;
+}
+.folllow ul a{
+text-decoration:none;
+}

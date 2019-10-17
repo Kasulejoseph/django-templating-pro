@@ -10,20 +10,21 @@
 </html>
 {% load crispy_forms_tags %}
 {% block content %}
-
-
+<div class="container">
 <div class = 'row'>
-<div class = 'col-sm-6 col-sm-offset-3'>
-<h1>{{ title }}</h1>
-<p>{{ confirm_message }}</p>
-<!-- hide form content if submit is done -->
-{% if form %}
-<form name = 'form' method = 'POST' action = ''> {% csrf_token %}
-{{ form|crispy }}
-<input type='submit' value='submit form' class ='btn btn-default' />
-</form>
-{% endif%}
-</div>
+    <div class = 'col-sm-6 col-sm-offset-3'>
+    <h1>{{ title }}</h1>
+    <p>{{ confirm_message }}</p>
+    <!-- hide form content if submit is done -->
+    {% if form %}
+    <form name = 'form' method = 'POST' action = ''> {% csrf_token %}
+    {{ form|crispy }}
+    <input type='submit' value='submit form' class ='btn btn-success' />
+    </form>
+    {% endif%}
+    </div>
+    </div>
 </div>
 {% endblock %}
+
 
